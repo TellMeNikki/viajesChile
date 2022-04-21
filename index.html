@@ -21,10 +21,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab309ee89d.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
   </head>
   <body>
+    
   <!--navbar-->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
@@ -44,19 +47,20 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quiénes Somos</a>
+            <a class="nav-link" href="#nosotros">Quiénes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Destacados</a>
+            <a class="nav-link" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!--carousel-->
+  <header>
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -78,5 +82,100 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </header>
+  <main class="main">
+    <section class="nosotros pt-5 bg-success" id="nosotros">
+      <h2 class="text-center">¿Quiénes Somos?</h2>
+      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
+      <div class="row mb-3 cards">
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <a class="bg-info p-2"><i class="fa-solid fa-plane text-light"></i></a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis turpis
+                ac ornare efficitur. Vestibulum eu eleifend arcu, nec sagittis lacus. Curabitur cursus semper maximus.
+                Nunc luctus, elit a pellentesque mattis, erat metus volutpat risus, quis ultrices ex ante a felis. Nulla
+                laoreet dolor et augue ullamcorper fringilla. Vivamus posuere volutpat luctus. Integer a tempus magna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit nunc sit amet leo molestie
+                hendrerit. Nam sed arcu sed ante porta consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed
+                faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+                <a class="bg-info p-2"><i class="fa-solid fa-mountain text-light"></i></a>
+                
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <a class="bg-info p-2"><i class="fa-solid fa-mountain text-light"></i></a>
+              <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac
+                eleifend risus, urna auctor inceptos mattis dapibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destacados pt-5 bg-warning" id="destacados">
+      <h2 class="text-center">Destacados</h2>
+      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
+      <div class="row mb-3 cards">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card h-100">
+            <img src="assets/img/card1.jpg" class="card-img-top" alt="panqueque">
+            <div class="card-body">
+              <h5 class="card-title my-2">Lorem ipsum dolor sit amet</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet nulla sed
+                sapien pulvinar, at elementum massa bibendum. Nulla consectetur justo ac tortor interdum ullamcorper.
+                Sed aliquet risus finibus dolor hendrerit, ut pulvinar odio ornare. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card h-100">
+            <img src="assets/img/card2.jpg" class="card-img-top" alt="tiramisu">
+            <div class="card-body">
+              <h5 class="card-title my-2">Etiam volutpat ultricies</h5>
+              <p class="card-text">Etiam volutpat ultricies eros non pretium. Praesent non eleifend urna. Curabitur lobortis lectus nec imperdiet tristique. Curabitur vitae ligula nibh. Proin hendrerit, nibh sed finibus lacinia, lectus elit ultrices augue, porta porttitor enim sapien eget velit. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card h-100">
+            <img src="assets/img/card3.jpg" class="card-img-top" alt="plateada">
+            <div class="card-body">
+              <h5 class="card-title my-2">Suspendisse tempor ante sit</h5>
+              <p class="card-text">Suspendisse tempor ante sit amet pellentesque dictum. Integer vestibulum id dolor sed
+                suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
+                in suscipit risus. Aliquam bibendum, quam vitae facilisis porttitor, justo urna aliquam sapien, at
+                venenatis arcu nunc nec lacus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+          <div class="card h-100">
+            <img src="assets/img/card4.jpg" class="card-img-top" alt="plateada">
+            <div class="card-body">
+              <h5 class="card-title my-2">Cubilia elementum</h5>
+              <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac
+                eleifend risus, urna auctor inceptos mattis dapibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacto pt-5 bg-primary" id="contacto">
+      <h2 class="text-center">Contacto</h2>
+      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
+    </section>
+  </main>
+  
+
   </body>
 </html>
