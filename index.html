@@ -26,178 +26,190 @@
 
     <script src="assets/js/script.js"></script>
   </head>
-  <body>
-    
-  <!--navbar-->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <div class="container-fluid">
-      <div class="ms-4">
-        <img src="assets/img/viajes.svg" alt="logo Viajes Chile">
-        <a class="navbar-brand logo" href="#">Viajes Chile</a>
-      </div>      
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <body>    
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <div>
+          <img src="assets/img/viajes.svg" alt="logo Viajes Chile">
+          <a class="navbar-brand logo" href="#">Viajes Chile</a>
+        </div>      
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample04">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="1a img carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="2a img carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="3a img carrusel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-
-      <div class="navbar-collapse collapse" id="navbarsExample04">
-        <ul class="navbar-nav ms-auto me-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#nosotros">Quiénes Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#destacados">Destacados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
-  <!--carousel-->
-  <header>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="1a img carrusel">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="2a img carrusel">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="3a img carrusel">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  </header>
-  <main class="main text-light">
-    <section class="nosotros py-5" id="nosotros">
-      <h2 class="text-center mt-3">¿Quiénes Somos?</h2>
-      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
-      <div class="row mb-3 cards ">
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-          <div class="card h-100 bg-transparent">
-            <div class="card-header text-center"><i class="fa-solid fa-plane py-2 fa-xl text-light"></i></div>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis turpis
-                ac ornare efficitur. Vestibulum eu eleifend arcu, nec sagittis lacus. Curabitur cursus semper maximus.
-                Nunc luctus, elit a pellentesque mattis, erat metus volutpat risus, quis ultrices ex ante a felis. Nulla
-                laoreet dolor et augue ullamcorper fringilla. Vivamus posuere volutpat luctus. Integer a tempus magna.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit nunc sit amet leo molestie
-                hendrerit. Nam sed arcu sed ante porta consequat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-          <div class="card h-100 bg-transparent">
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor pretium augue
-                quis blandit. Aenean convallis sapien non quam aliquet, sed porttitor purus sodales. Mauris suscipit leo
-                a dolor condimentum, porta facilisis est commodo. Quisque sed lorem dictum nunc venenatis faucibus eu ac
-                risus. Vestibulum id lacus eget enim vehicula placerat. Nunc congue sollicitudin est, vitae imperdiet mi
-                bibendum et. Sed et euismod mi. Ut imperdiet justo ut molestie pretium.</p>
-            </div>
-            <div class="card-footer text-center"><i class="fa-solid fa-mountain py-2 fa-xl text-light"></i></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-          <div class="card h-100 bg-transparent">
-            <div class="card-header text-center"><i class="fa-solid fa-route py-2 fa-xl text-light"></i></div>
-            <div class="card-body">
-              <p class="card-text">Fusce a feugiat tellus. Sed in posuere augue, a dapibus metus. Mauris efficitur
-                porttitor egestas. Sed non pretium dolor. Suspendisse lectus odio, eleifend vitae molestie id, laoreet
-                condimentum elit. Mauris mattis est nec est suscipit placerat. Nunc elementum aliquet pulvinar. Fusce in
-                est pellentesque, congue dolor sed, gravida erat. Suspendisse ornare fermentum tellus eu accumsan.
-                Aliquam hendrerit pellentesque elit eget venenatis. Etiam dignissim quis purus auctor cursus. Maecenas
-                viverra scelerisque orci, id elementum mi dapibus quis.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="destacados pt-5" id="destacados">
-      <h2 class="text-center mt-3">Destacados</h2>
-      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
-      <div class="row mb-3 cards">
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <div class="card h-100 card-paisaje">
-            <img src="assets/img/card1.jpg" class="card-img-top" alt="imagen 1">
-            <div class="card-body">
-              <h5 class="card-title my-2">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet nulla sed
-                sapien pulvinar, at elementum massa bibendum. Nulla consectetur justo ac tortor interdum ullamcorper.
-                Sed aliquet risus finibus dolor hendrerit, ut pulvinar odio ornare. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <div class="card h-100 card-paisaje">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="imagen 2">
-            <div class="card-body">
-              <h5 class="card-title my-2">Etiam volutpat ultricies</h5>
-              <p class="card-text">Etiam volutpat ultricies eros non pretium. Praesent non eleifend urna. Curabitur lobortis lectus nec imperdiet tristique. Curabitur vitae ligula nibh. Proin hendrerit, nibh sed finibus lacinia, lectus elit ultrices augue, porta porttitor enim sapien eget velit. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <div class="card h-100 card-paisaje">
-            <img src="assets/img/card3.jpg" class="card-img-top" alt="imagen 3">
-            <div class="card-body">
-              <h5 class="card-title my-2">Suspendisse tempor ante sit</h5>
-              <p class="card-text">Suspendisse tempor ante sit amet pellentesque dictum. Integer vestibulum id dolor sed
-                suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
-                in suscipit risus. Aliquam bibendum, quam vitae facilisis porttitor, justo urna aliquam sapien, at
-                venenatis arcu nunc nec lacus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <div class="card h-100 card-paisaje">
-            <img src="assets/img/card4.jpg" class="card-img-top" alt="imagen 4">
-            <div class="card-body">
-              <h5 class="card-title my-2">Cubilia elementum</h5>
-              <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac
-                eleifend risus, urna auctor inceptos mattis dapibus.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contacto pt-5" id="contacto">
-      <h2 class="text-center mt-3">Contacto</h2>
-      <hr class="my-5" style="height:1.8px;background-color:rgb(245, 241, 241);">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
-  </main>
-  
 
+    <main class="main text-light">
+      <!--seccion nosotros-->
+      <section class="nosotros" id="nosotros">
+        <h1 class="text-center pt-3">¿Quiénes Somos?</h1>
+        <hr class="linea" style="height:1.8px;background-color:rgb(245, 241, 241);">
+        <div class="row mb-3 cards ">
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <div class="card h-100 bg-transparent">
+              <div class="card-header text-center"><i class="fa-solid fa-plane py-3 fa-xl text-light"></i></div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis turpis
+                  ac ornare efficitur. Vestibulum eu eleifend arcu, nec sagittis lacus. Curabitur cursus semper maximus.
+                  Nunc luctus, elit a pellentesque mattis, erat metus volutpat risus, quis ultrices ex ante a felis. Nulla
+                  laoreet dolor et augue ullamcorper fringilla. Vivamus posuere volutpat luctus. Integer a tempus magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit nunc sit amet leo molestie
+                  hendrerit. Nam sed arcu sed ante porta consequat, .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <div class="card h-100 bg-transparent">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor pretium augue
+                  quis blandit. Aenean convallis sapien non quam aliquet, sed porttitor purus sodales. Mauris suscipit leo
+                  a dolor condimentum, porta facilisis est commodo. Quisque sed lorem dictum nunc venenatis faucibus eu ac
+                  risus. Vestibulum id lacus eget enim vehicula placerat. Nunc congue sollicitudin est, vitae imperdiet mi
+                  bibendum et. Sed et euismod mi. Ut imperdiet justo ut molestie pretium.</p>
+              </div>
+              <div class="card-footer text-center mb-3"><i class="fa-solid fa-mountain py-3 fa-xl text-light"></i></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <div class="card h-100 bg-transparent">
+              <div class="card-header text-center"><i class="fa-solid fa-route py-3 fa-xl text-light"></i></div>
+              <div class="card-body">
+                <p class="card-text">Fusce a feugiat tellus. Sed in posuere augue, a dapibus metus. Mauris efficitur
+                  porttitor egestas. Sed non pretium dolor. Suspendisse lectus odio, eleifend vitae molestie id, laoreet
+                  condimentum elit. Mauris mattis est nec est suscipit placerat. Nunc elementum aliquet pulvinar. Fusce in
+                  est pellentesque, congue dolor sed, gravida erat. Suspendisse ornare fermentum tellus eu accumsan.
+                  Aliquam hendrerit pellentesque elit eget venenatis. Etiam dignissim quis purus auctor cursus. Maecenas
+                  viverra scelerisque orci, id elementum mi dapibus quis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--seccion destacados-->
+      <section class="destacados" id="destacados">
+        <h1 class="text-center pt-3">Destacados</h1>
+        <hr class="linea" style="height:1.8px;background-color:rgb(245, 241, 241);">
+        <div class="row mb-3 cards">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card h-100 card-paisaje">
+              <img src="assets/img/card1.jpg" class="card-img-top" alt="imagen 1">
+              <div class="card-body">
+                <h5 class="card-title my-2">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet nulla sed
+                  sapien pulvinar, at elementum massa bibendum. Nulla consectetur justo ac tortor interdum ullamcorper.
+                  Sed aliquet risus finibus dolor hendrerit, ut pulvinar odio ornare. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card h-100 card-paisaje">
+              <img src="assets/img/card2.jpg" class="card-img-top" alt="imagen 2">
+              <div class="card-body">
+                <h5 class="card-title my-2">Etiam volutpat ultricies</h5>
+                <p class="card-text">Etiam volutpat ultricies eros non pretium. Praesent non eleifend urna. Curabitur lobortis lectus nec imperdiet tristique. Curabitur vitae ligula nibh. Proin hendrerit, nibh sed finibus lacinia, lectus elit ultrices augue. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card h-100 card-paisaje">
+              <img src="assets/img/card3.jpg" class="card-img-top" alt="imagen 3">
+              <div class="card-body">
+                <h5 class="card-title my-2">Suspendisse tempor ante sit</h5>
+                <p class="card-text">Suspendisse tempor ante sit amet pellentesque dictum. Integer vestibulum id dolor sed
+                  suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris
+                  in suscipit risus. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+            <div class="card h-100 card-paisaje">
+              <img src="assets/img/card4.jpg" class="card-img-top" alt="imagen 4">
+              <div class="card-body">
+                <h5 class="card-title my-2">Cubilia elementum</h5>
+                <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac
+                  eleifend risus, urna auctor inceptos mattis dapibus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--seccion contacto-->
+      <section class="contacto" id="contacto">
+        <h1 class="text-center pt-3">Contacto</h1>
+        <hr class="linea" style="height:1.8px;background-color:rgb(245, 241, 241);">
+        <form>
+          <div class="pb-2">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
+          <div class="mb-2">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto" aria-describedby="asunto">
+          </div>
+          <div class="mb-2">
+            <label for="mwnsaje" class="form-label">Mensaje</label>
+            <input type="text " class="form-control" id="asunto" aria-describedby="asunto" style="height:170px">
+          </div>       
+          <a type="submit" class="btn btn-enviar text-white fw-bold px-5 py-2 mb-3">Enviar </a>
+        </form>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="navbar-dark">
+      <div class="row py-3">
+        <div class=" col-lg-6 col-md-6 col-sm-6 text-center">
+          <a class="navbar-brand logo fw-bold" href="#">Viajes Chile</a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 text-white text-center iconos">
+          <i class="fa-brands fa-facebook-square fa-2xl pe-2"></i>
+          <i class="fa-brands fa-twitter-square fa-2xl pe-2"></i>
+          <i class="fa-brands fa-instagram-square fa-2xl pe-2"></i>
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>
