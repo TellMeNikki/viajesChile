@@ -109,3 +109,9 @@ footer .logo{
     font-weight: 400;
   }
 }
+
+@media (max-width:426px) {
+  .nosotros .card-body{
+    display: none;
+  }
+}
