@@ -111,7 +111,8 @@ footer .logo{
 }
 
 @media (max-width:426px) {
-  .nosotros .card-body{
+  .nosotros, #nav-nosotros{
     display: none;
   }
+
 }
